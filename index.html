@@ -9,40 +9,41 @@
 <body>
     <div id="calculator">
         <div id="screen">
-            <p></p>
+            <p id="p-screen">0</p>
         </div>
         <div id="buttons">
             <div>
-                <button class="calc-button function-button">AC</button> 
-                <button class="calc-button function-button">C</button> 
-                <button class="calc-button function-button">%</button> 
-                <button class="calc-button operation-button">÷</button>
+                <button class="calc-button function-button" onclick="get_text(this)">AC</button> 
+                <button class="calc-button function-button" onclick="get_text(this)">C</button> 
+                <button class="calc-button function-button" onclick="get_text(this)">%</button> 
+                <button class="calc-button operation-button" onclick="get_text(this)">÷</button>
             </div>
             <div>
-                <button class="calc-button">7</button> 
-                <button class="calc-button">8</button> 
-                <button class="calc-button">9</button> 
-                <button class="calc-button operation-button">X</button>
+                <button class="calc-button number-button" onclick="get_text(this)">7</button> 
+                <button class="calc-button number-button" onclick="get_text(this)">8</button> 
+                <button class="calc-button number-button" onclick="get_text(this)">9</button> 
+                <button class="calc-button operation-button" onclick="get_text(this)">x</button>
             </div>
             <div>
-                <button class="calc-button">4</button> 
-                <button class="calc-button">5</button> 
-                <button class="calc-button">6</button> 
-                <button class="calc-button operation-button">-</button>
+                <button class="calc-button number-button" onclick="get_text(this)">4</button> 
+                <button class="calc-button number-button" onclick="get_text(this)">5</button> 
+                <button class="calc-button number-button" onclick="get_text(this)">6</button> 
+                <button class="calc-button operation-button" onclick="get_text(this)">-</button>
             </div>
             <div>
-                <button class="calc-button">1</button> 
-                <button class="calc-button">2</button> 
-                <button class="calc-button">3</button> 
-                <button class="calc-button operation-button">+</button>
+                <button class="calc-button number-button" onclick="get_text(this)">1</button> 
+                <button class="calc-button number-button" onclick="get_text(this)">2</button> 
+                <button class="calc-button number-button" onclick="get_text(this)">3</button> 
+                <button class="calc-button operation-button" onclick="get_text(this)">+</button>
             </div>
             <div>
-                <button class="calc-button zero">0</button> 
-                <button class="calc-button">,</button>
-                <button class="calc-button">+ / -</button> 
-                <button class="calc-button operation-button">=</button>
+                <button class="calc-button number-button" onclick="get_text(this)">0</button> 
+                <button class="calc-button decimal-button" onclick="get_text(this)">.</button>
+                <button class="calc-button inverse-button" onclick="get_text(this)">+ / -</button> 
+                <button class="calc-button equal-button" onclick="get_text(this)">=</button>
             </div>
         </div>
     </div>
 </body>
+<script src="scipt.js"></script>
 </html>
